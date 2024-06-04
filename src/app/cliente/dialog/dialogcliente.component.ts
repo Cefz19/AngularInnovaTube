@@ -11,6 +11,8 @@ import { Cliente } from "../../models/cliente";
 })
 
 export class DialogClienteComponent {
+    public nombre!: string;
+
     constructor(
         public dialogRef:  MatDialogRef<DialogClienteComponent>,
         public apiCliente: ApiclienteService,
@@ -22,12 +24,12 @@ export class DialogClienteComponent {
     }
 
     addCliente() {
-        const cliente: Cliente = { nombre: 'patito2'};
+        const cliente: Cliente = {nombre: this.nombre };
         this.apiCliente.add(cliente).subscribe(response => {
             if(response.exito === 1) {
                 this.dialogRef.close();
                 this.snackBar.open('Cliente insertado con exito', '', {
-                    duration: 200
+                    duration: 2000
                 });
             }
         });

@@ -6,5 +6,6 @@ import { ClienteComponent } from './cliente/cliente.component';
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full'},
     { path: 'home', component: HomeComponent },
+    { path: 'login', component: HomeComponent },
     { path: 'cliente', component: ClienteComponent }
 ];

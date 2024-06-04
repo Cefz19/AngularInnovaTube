@@ -5,7 +5,7 @@ import { DialogClienteComponent } from './dialog/dialogcliente.component';
 import { MatDialog } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 
-import { Response } from '../models/response';
+
 
 
 
@@ -43,7 +43,7 @@ export class ClienteComponent {
   }
   openAdd(){
     const dialogRef = this.dialog.open(DialogClienteComponent,{
-      width: '400'
+      width: '1300'
     });
     dialogRef.afterClosed().subscribe(result => {
       this.getClientes();

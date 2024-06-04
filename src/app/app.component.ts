@@ -1,17 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CommonModule } from '@angular/common';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTableModule } from '@angular/material/table';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ClienteComponent } from './cliente/cliente.component';
+import { DialogClienteComponent } from './cliente/dialog/dialogcliente.component';
 import { HttpClientModule } from '@angular/common/http';
-
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module} from 'ng-recaptcha';
 
 
 
@@ -23,15 +24,24 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     ClienteComponent,
     RouterOutlet, 
-    CommonModule,
     MatSidenavModule,
     MatButtonModule,
     MatDialogModule,
     MatInputModule,
     MatSnackBarModule,
+    MatTableModule,
+    DialogClienteComponent,
     RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RecaptchaV3Module,
 
     HttpClientModule
+  ],
+  providers: [{
+    provide: RECAPTCHA_V3_SITE_KEY,
+    useValue: 'pon_la_key_de_google',
+  }
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

@@ -9,12 +9,12 @@ const httpOptions = {
     'Contend-Type': 'applicacion/json'
   })
 };
-
+/**Inyecion de las dependencias del servico de la api para conectar al cliente*/
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class ApiclienteService {
-  url: string = 'https://localhost:44315/api/Cliente';
+  url: string = 'https://localhost:44310/api/cliente';
 
   constructor(
     private _http: HttpClient
