@@ -6,10 +6,13 @@ import { map } from 'rxjs/operators';
     providedIn: 'root'
 })
 export class YoutubeService {
+/**Consumos del la api desde https://console.cloud.google.com*/
 
-    private url:string = '';
-    private api_key : string = '';
-    private canal:string = '';
+/**Consumos del la api desde https://develorper.google.com*/
+
+    private url:string = 'https://www.googleapis.com/youtube/v3/search';
+    private api_key : string = 'AIzaSyAxDxpY2QaTVK1Zdyz8cmcWpFf3xvN-EsU';
+    private canal:string = 'MMalEsaeqcI?si=hfStovzfZbPBPzYm';
     constructor(private _http:HttpClient) {}
 
     obtenerVideos() {
