@@ -8,8 +8,6 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { ClienteComponent } from './cliente/cliente.component';
-import { DialogClienteComponent } from './cliente/dialog/dialogcliente.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module} from 'ng-recaptcha';
@@ -22,7 +20,6 @@ import {RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module} from 'ng-recaptcha';
   standalone: true,
   imports: [
     HomeComponent,
-    ClienteComponent,
     RouterOutlet, 
     MatSidenavModule,
     MatButtonModule,
@@ -30,7 +27,6 @@ import {RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module} from 'ng-recaptcha';
     MatInputModule,
     MatSnackBarModule,
     MatTableModule,
-    DialogClienteComponent,
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
