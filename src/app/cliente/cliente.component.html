@@ -1,0 +1,208 @@
+<p>cliente works!</p>
+
+<div *ngFor="let element of lst">
+    {{element.nombre}}
+
+</div>
+
+
+<header>
+
+    <div class="menu-header">
+        <button id="button-header-favorite">
+            <i class="fa-solid fa-heart"></i>
+            <span class="counter-favorite">0</span>
+        </button>
+    </div>
+
+    <div class="container-list-favorites">
+        <div class="header-favorite">
+            <h3>Mis Favoritos</h3>
+            <i class="fa-solid fa-xmark" id="btn-close"></i>
+        </div>
+        
+    </div>
+</header>
+<div class="container-header">
+    <div class="container-video text-center mt-5">
+        <div class="card">
+            <h1><strong class="mt-4">Hello!</strong></h1>
+            <div class="container-video-header">
+                <div class="row">
+                    <div *ngFor="let v of videos" class="col-4">
+                        <youtube-player [videoId]="v.video" disablePlaceholder suggestedQuality="highres" [height]="200" [width]="300"></youtube-player>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <h1>InnovaTube</h1>
+
+    <div class="container-products">
+        <div class="card-product">
+            <div class="container-img-indi">
+                <div class="col-4">
+                    <youtube-player videoId="TMxqAqPBC7k" disablePlaceholder suggestedQuality="highres" [height]="350" [width]="400"></youtube-player>
+                </div>
+            </div>
+            <div class="content-card-product" data-product-id="1">
+                <div class="footer-card-product">
+                    <div class="container-buttons-card">
+                        <button class="favorite">
+                            <i
+                                class="fa-regular fa-heart"
+                                id="favorite-regular"
+                            ></i>
+                            <i
+                                class="fa-solid fa-heart"
+                                id="added-favorite"
+                            ></i>
+                        </button>
+                        <button class="cart">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-product">
+            <div class="container-img">
+                <img
+                    src="https://images.unsplash.com/photo-1549109926-58f039549485?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="imagen Producto"
+                />
+            </div>
+            <div class="content-card-product" data-product-id="2">
+                <div class="footer-card-product">
+                    <div class="container-buttons-card">
+                        <button class="favorite">
+                            <i
+                                class="fa-regular fa-heart"
+                                id="favorite-regular"
+                            ></i>
+                            <i
+                                class="fa-solid fa-heart"
+                                id="added-favorite"
+                            ></i>
+                        </button>
+                        <button class="cart">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-product">
+            <div class="container-img-indi">
+                <div class="col-4">
+                    <youtube-player videoId="n4RjJKxsamQ" disablePlaceholder suggestedQuality="highres" [height]="200" [width]="300"></youtube-player>
+                </div>
+            </div>
+            <div class="content-card-product" data-product-id="3">
+                <div class="footer-card-product">
+                    <div class="container-buttons-card">
+                        <button class="favorite">
+                            <i
+                                class="fa-regular fa-heart"
+                                id="favorite-regular"
+                            ></i>
+                            <i
+                                class="fa-solid fa-heart"
+                                id="added-favorite"
+                            ></i>
+                        </button>
+                        <button class="cart">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-product">
+            <div class="container-img">
+                <img
+                    src="https://images.unsplash.com/photo-1509762774605-f07235a08f1f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="imagen Producto"
+                />
+            </div>
+            <div class="content-card-product" data-product-id="4">
+
+                <div class="footer-card-product">
+
+                    <div class="container-buttons-card">
+                        <button class="favorite">
+                            <i
+                                class="fa-regular fa-heart"
+                                id="favorite-regular"
+                            ></i>
+                            <i
+                                class="fa-solid fa-heart"
+                                id="added-favorite"
+                            ></i>
+                        </button>
+                        <button class="cart">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-product">
+            <div class="container-img-indi">
+                <div class="col-4">
+                    <youtube-player videoId="_Yhyp-_hX2s" disablePlaceholder suggestedQuality="highres" [height]="200" [width]="300"></youtube-player>
+                </div>
+            </div>
+            <div class="content-card-product" data-product-id="5">
+                <div class="footer-card-product">
+                    <div class="container-buttons-card">
+                        <button class="favorite">
+                            <i
+                                class="fa-regular fa-heart"
+                                id="favorite-regular"
+                            ></i>
+                            <i
+                                class="fa-solid fa-heart"
+                                id="added-favorite"
+                            ></i>
+                        </button>
+                        <button class="cart">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-product">
+            <div class="container-img">
+                <img
+                    src="https://images.unsplash.com/photo-1570222094114-d054a817e56b?q=80&w=1505&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="imagen Producto"
+                />
+            </div>
+            <div class="content-card-product" data-product-id="6">
+                <div class="footer-card-product">
+                    <div class="container-buttons-card">
+                        <button class="favorite">
+                            <i
+                                class="fa-regular fa-heart"
+                                id="favorite-regular"
+                            ></i>
+                            <i
+                                class="fa-solid fa-heart"
+                                id="added-favorite"
+                            ></i>
+                        </button>
+                        <button class="cart">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

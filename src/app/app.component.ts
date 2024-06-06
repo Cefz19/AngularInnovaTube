@@ -5,10 +5,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { MatTableModule } from '@angular/material/table';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module} from 'ng-recaptcha';
 
@@ -26,12 +26,10 @@ import {RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module} from 'ng-recaptcha';
     MatDialogModule,
     MatInputModule,
     MatSnackBarModule,
-    MatTableModule,
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
     RecaptchaV3Module,
-
     HttpClientModule
   ],
   providers: [{
