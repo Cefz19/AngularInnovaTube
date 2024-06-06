@@ -10,7 +10,7 @@ import { MatSort } from '@angular/material/sort';
   imports: [
     CommonModule,
     MatTableModule,
-    MatSort
+    MatSort,
   ]
 })
 export class MaterialModule { }
