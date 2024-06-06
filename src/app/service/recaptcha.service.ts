@@ -20,7 +20,7 @@ export class RecaptchaService {
         'Content-Type':  'application/json',
       })
     };
-      return this.http.post<any>( '6Ldw4_ApAAAAAPdW5fVe9OO1HxKntf5-AWY7EoxY' + token +'/', httpOptions)
+      return this.http.post<any>( '/' + token +'/', httpOptions)
         .pipe(
           map((response) => response),
           catchError((err) => {
